@@ -24,7 +24,8 @@ export function Products() {
 
   return (
     <>
-      <Navbar />
+    <Navbar />
+      
       <div className="p-4">
         <div className="flex flex-wrap justify-center">
           {products.map((items) => (

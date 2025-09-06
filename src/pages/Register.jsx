@@ -1,9 +1,11 @@
 import "../App.css";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import { Link, NavLink } from "react-router";
+import Navbar from "../components/Navbar";
 
 function Register() {
-  return (
+  return (<>
+    <Navbar />
     <div className="flex justify-center items-center min-h-screen px-4">
     <fieldset
       id="ds"
@@ -59,6 +61,7 @@ function Register() {
       </form>
     </fieldset>
     </div>
+    </>
   );
 }
 

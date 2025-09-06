@@ -2,9 +2,12 @@
 import "../App.css";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import {Link, NavLink} from "react-router";
+import Navbar from "../components/Navbar";
 
  function Login() {
-  return (
+  return (<> 
+    <Navbar />
+
     <div className="flex justify-center items-center min-h-screen px-4">
     <fieldset id="fs" className="p-11 border-2 border-amber-500 rounded-2xl w-full max-w-md">
       <legend htmlFor="ds"><span className="text-3xl font-bold mx-4">Login</span></legend> 
@@ -27,6 +30,8 @@ import {Link, NavLink} from "react-router";
     </form>
     </fieldset>
     </div>
+    </>
+
   );
 }
 
